@@ -1,32 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUST BUY:Online store</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link
+         rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>CRUD APPLICATION</title>
+    </head>
+    <body>
+       
+        <div class="container">
+            <h1 class="text-center fw-bold p-4">CRUD APPLICATION</h1>
+            <div class="row">
+                <div class="col-md-12 bg-skyblue shadow-lg p-4">
+                    <div class="d-flex bg-info p-2 w-100 justify-content-between">
+                        <div>
+                            <h1>@WELCOME BY CODER</h1>
+                        </div>
+                        <div>
+                            <button class="btn btn-light">
+                                <input type="search" placeholder="search" class="search form-control">
+                            </button>
+                            <button class="btn delete-all-btn btn-danger">
+                                <i class="fa fa-minus"></i> Delete All
+                            </button>
+                            <button class="btn btn-primary add-btn" data-bs-toggle="modal" data-bs-target="#mymodal">
+                                <i class="fa fa-plus"></i>Add new user
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="column-md-12 table-responsive">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="fw-bold">sr no.</th>
+                                    <th class="fw-bold">Profile</th>
+                                    <th class="fw-bold">Name</th>
+                                    <th class="fw-bold">E-mail</th>
+                                    <th class="fw-bold">ph.no</th>
+                                    <th class="fw-bold">DOB</th>
+                                    <th class="fw-bold">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="reg-List">
+                               
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!--font link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <!--css link-->
-
-    <link rel="stylesheet" href="css/pr.css">
-</head>
-<body>
-    <!--header section-->
-    <header class="header">
-        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i></a>
-
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#features">features</a>
-            <a href="#products">products</a>
-            <a href="#categories">categories</a>
-            <a href="#review">review</a>
-            <a href="#blogs">blogs</a>
-        </nav>
-    </header>
-    <!--javascript link-->
-    <script src="js/pr.js"></script>
-</body>
+            <div class="modal animate__animated animate__zoomIn" id="mymodal">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-info">
+                            <h4 class="fw-bold">Add new user</h4>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="register-form">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Name</span>
+                                    <input type="text" required class="form-control">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">E-mail</span>
+                                    <input type="email" required class="form-control">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">ph</span>
+                                    <input type="number"required class="form-control">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">DOB</span>
+                                    <input type="date" required class="form-control">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Password</span>
+                                    <input type="password"required class="form-control">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control">
+                                </div>
+                                <div class="input-group w-100 d-f;ex justify-content-end align-items-center mb-3">
+                                    <button disabled class="btn fw-bold btn-success mx-1" type="button">Update</button>
+                                    <button class="btn fw-bold btn-primary mx-1" type="submit">Submit</button>
+                                </div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="pr.js"></script>
+    </body>
 </html>
