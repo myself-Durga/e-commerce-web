@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUST BUY:Online store</title>
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--font link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!--css link-->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header section-->
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i>JUST BUY</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-26 223724.png" alt="">
+            <div class="content">
+                <h3>Saree</h3>
+                <span class="price">$5</span>
+                <span class="quantity">qty:1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-26 225001.png" alt="">
+            <div class="content">
+                <h3>Lahenga</h3>
+                <span class="price">$6</span>
+                <span class="quantity">qty:1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-26 224730.png" alt="">
+            <div class="content">
+                <h3>Mens</h3>
+                <span class="price">$6</span>
+                <span class="quantity">qty:1</span>
+            </div>
+        </div>
+        <div class="total">total: $18.23/-</div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="enter email address" class="box">
+        <input type="password" placeholder="enter password" class="box">
+        <p>forget password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>
+
+<!--home section-->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Trending and <span>Affordable </span>products for you</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi quaerat est repellat officiis hic!</p>
+        <a href="#" class="btn">buy now</a>
+    </div>
+</section>
+<!--features section-->
+<section class="features" id="features">
+    <h1 class="heading">our <span>features</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="c:\Users\HP\Pictures\Screenshots\istockphoto-1178988738-1024x1024.jpg" alt="">
+            <h3>Trending and Affordable</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloribus dolores tempora qui sit? Non quo, ratione nihil quia maiores, eveniet accusamus, id placeat enim nulla impedit sunt molestias omnis.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="https://png.pngtree.com/png-clipart/20200709/ourmid/pngtree-delivery-boy-riding-with-mask-transparent-png-png-image_2303253.jpg" alt="">
+            <h3>Free delivery</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloribus dolores tempora qui sit? Non quo, ratione nihil quia maiores, eveniet accusamus, id placeat enim nulla impedit sunt molestias omnis.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzJkTuJTsvIr9GGlhvk83PmFmjC2kyECIjQ-r2QduyT_Y9yjZpfs7-ToNGjhD03gtU6po&usqp=CAU" alt="">
+            <h3>easy payments</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloribus dolores tempora qui sit? Non quo, ratione nihil quia maiores, eveniet accusamus, id placeat enim nulla impedit sunt molestias omnis.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </div>
+</section>
+
+
+<!--product section-->
+<section class="products" id="products">
+    <h1 class="heading">our <span>products</span></h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-28 214409.png" alt="">
+                <h3>korean outfit</h3>
+                <div class="price">$4.8/- -10.3/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-28 215144.png" alt="">
+                <h3>long skirt</h3>
+                <div class="price">$6/- -17.6/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-28 215546.png" alt="">
+                <h3>gown</h3>
+                <div class="price">$8.3/- -18.6/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-28 215904.png" alt="">
+                <h3>heels</h3>
+                <div class="price">$7.2/- -10.7/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-28 220117.png" alt="">
+                <h3>mens wear</h3>
+                <div class="price">$6.5/- -13.2/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-28 223107.png" alt="">
+                <h3>skirts</h3>
+                <div class="price">$6.5/- -13.2/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            
+            <div class="swiper-slide box">
+                <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-28 223749.png" alt="">
+                <h3>perfume</h3>
+                <div class="price">$6/- -16.2/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-28 223539.png" alt="">
+                <h3>bracelets</h3>
+                <div class="price">$5/- -12/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--categories section-->
+<section class="categories" id="categories">
+    <h1 class="heading"> product <span>categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-28 232104.png" alt="">
+            <h3>clothes</h3>
+            <p>upto 50% off</p>
+            <a href="#" class="btn">buy now</a>
+        </div>
+        <div class="box">
+            <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-28 232428.png" alt="">
+            <h3>jewels</h3>
+            <p>upto 50% off</p>
+            <a href="#" class="btn">buy now</a>
+        </div>
+        <div class="box">
+            <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-11-28 232834.png" alt="">
+            <h3>footwear</h3>
+            <p>upto 50% off</p>
+            <a href="#" class="btn">buy now</a>
+        </div>
+    </div>
+</section>
+
+<!--review section-->
+<section class="review" id="review">
+    <h1 class="heading">customer's <span>review</span></h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx0V5npqqHN7HA0ql2IQAXFsfY4wCZplnBWA&s" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laudantium amet necessitatibus aspernatur. Animi quidem ipsa aliquid dolore eos quos explicabo doloremque, nam eum, qui praesentium autem est totam quam!</p>
+                <h3>john warren</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://pbs.twimg.com/media/GdYnhQ_bgAAnLdv.jpg:large" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laudantium amet necessitatibus aspernatur. Animi quidem ipsa aliquid dolore eos quos explicabo doloremque, nam eum, qui praesentium autem est totam quam!</p>
+                <h3>Serriun</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://cdn.openart.ai/uploads/image_Y9BZcFw5_1688140197272_512.webp" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laudantium amet necessitatibus aspernatur. Animi quidem ipsa aliquid dolore eos quos explicabo doloremque, nam eum, qui praesentium autem est totam quam!</p>
+                <h3>Shiney itzi</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://voicefilm.com/wp-content/uploads/2022/07/Natasha-Romanoff.jpeg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laudantium amet necessitatibus aspernatur. Animi quidem ipsa aliquid dolore eos quos explicabo doloremque, nam eum, qui praesentium autem est totam quam!</p>
+                <h3>Aleena Gomez</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--blogs section-->
+<section class="blogs" id="blogs">
+    <h1 class="heading">our <span>blogs</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8eBZ4ouZcbMPoO7Y70-cG80HM3_jmLPqWJw&s" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user"></i> by user </a>
+                    <a href="#"><i class="fas fa-calender"></i> 23nd Feb, 2023 </a>
+                </div>
+                <h3>Trending and Affordable products</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi dolorum perferendis odit itaque quis beatae consequatur voluptatibus at dolores.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0rOxBG5BiPQZOF5gaFPdndyqTKH9mzwYkg&s" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user"></i> by user </a>
+                    <a href="#"><i class="fas fa-calender"></i> 21nd Sept, 2023 </a>
+                </div>
+                <h3>Trending and Affordable products</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi dolorum perferendis odit itaque quis beatae consequatur voluptatibus at dolores.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ly_VKbbOvgyTuAXM2MXh6PFePEavCAypOEyXSgTm81Vjwq5HAKy1jrcK4t1rN9967BQ&usqp=CAU" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user"></i> by user </a>
+                    <a href="#"><i class="fas fa-calender"></i> 21nd Sept, 2021 </a>
+                </div>
+                <h3>Trending and Affordable products</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi dolorum perferendis odit itaque quis beatae consequatur voluptatibus at dolores.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpaEXNB5jXe_EaBSYQCrwQtI-PaWLbCpqVaH7eOYtppKlFCTi_WSOqA7ZgLqbszS6HcY&usqp=CAU" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user"></i> by user </a>
+                    <a href="#"><i class="fas fa-calender"></i> 2nd March, 2024 </a>
+                </div>
+                <h3>Trending and Affordable products</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi dolorum perferendis odit itaque quis beatae consequatur voluptatibus at dolores.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer section-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>JUST BUY:Online store <i class="fas fa-shopping-basket"></i></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit distinctio nam fugit tempora ipsa, at recusandae corporis quod, cum aspernatur nemo neque id asperiores nihil, accusantium officia aliquid impedit! Perferendis?</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>    
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 9413649808</a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 9418085643</a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> buyer321@gmail.com</a>
+            <a href="#" class="links"> <i class="fas fa-mao-marker-alt"></i> Uttarakhand,Nainital-5234</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i>home</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i>features</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i>products</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i>categories</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i>review</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i>blogs</a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="" class="payment-img" alt="">
+        </div>
+    </div>
+
+    <div class="credit">created by <span>Durga,sweta,priyanku,yakshana,d.sharmila,krishnarchana,aman,sharda</span> | all rights reserved |</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--javascript link-->
+<script src="script.js"></script>
+</body>
+</html>
